@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="coordinator_table.js"></script>
+  <link rel="stylesheet" href="style.css" </head>
+
+<body>
+  <div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+      <tr>
+        <th>Student Name</th>
+        <th>Student ID</th>
+        <th>Course</th>
+        <th>Supervisor</th>
+        <th>Schedule</th>
+        <th>Project</th>
+      </tr>
+
+      <tr id="row1">
+        <td id="student_row1">Amy Lee</td>
+        <td id="id_row1">0136228</td>
+        <td id="course_row1">UCOMS</td>
+        <td id="supervisor_row1">Chua Hiang Kiat</td>
+        <td id="schedule_row1">Monday, 2-4pm</td>
+        <td id="project_row1">Online Learning System</td>
+        <td>
+          <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row(1)">
+          <input type="button" id="save_button1" value="Save" class="save" onclick="save_row(1)">
+          <input type="button" value="Delete" class="delete" onclick="delete_row(1)">
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="text" id="new_student"></td>
+        <td><input type="text" id="new_id"></td>
+        <td><input type="text" id="new_course"></td>
+        <td><input type="text" id="new_supervisor"></td>
+        <td><input type="text" id="new_schedule"></td>
+        <td><input type="text" id="new_project"></td>
+        <td>
+          <input type="button" class="add" onclick="add_row();" value="Add Row">
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  <a href="../Login.html/index.html">
+    <button class="btnGS">Main Menu</button><br>
+  </a>
+</body>
+
+</html>

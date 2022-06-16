@@ -1,0 +1,26 @@
+<style>
+body {
+  text-align:center;
+}
+h1 {
+  color: #3A130B;
+}
+form {
+  background-color : #ffc;
+  text-align: center;
+  border: solid;
+  height: 40%
+}
+
+</style>
+<form method="post" onsubmit="submission()">
+    <label for="myfile"><h1>Submit here:</h1></label>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    <input type="submit">
+  </form>
+
+  <script>
+  function submission() {
+    alert("Successfully submitted");
+  }
+  </script>
